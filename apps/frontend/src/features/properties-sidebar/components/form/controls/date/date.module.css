@@ -1,0 +1,10 @@
+.dateInput {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.label {
+  composes: p11 from global;
+}

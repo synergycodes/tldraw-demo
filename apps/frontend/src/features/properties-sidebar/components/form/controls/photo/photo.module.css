@@ -1,0 +1,15 @@
+.input {
+  display: flex;
+  width: 100%;
+  min-width: 254px;
+}
+
+.label {
+  composes: p11 from global;
+}
+
+.helperText {
+  color: var(--ax-txt-error-default);
+
+  composes: p12 from global;
+}

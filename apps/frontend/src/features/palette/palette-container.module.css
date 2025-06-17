@@ -1,0 +1,11 @@
+.container {
+  width: auto;
+  position: absolute;
+  top: 78px;
+  left: 0;
+  margin: 20px;
+  display: flex;
+  &.isExpanded {
+    bottom: 0;
+  }
+}

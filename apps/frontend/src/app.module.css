@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.topNavbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 20px;
+  display: flex;
+  padding: var(--wb-token-spacing-top-navbar-v-pad, 12px)
+    var(--wb-token-spacing-top-navbar-h-pad, 16px);
+  align-items: center;
+  border-radius: var(--wb-token-radius-shell, 12px);
+  border: 1px solid var(--wb-ui-stroke-primary-default, #edeff3);
+  background: var(--wb-ui-bg-primary-default, #fff);
+}
+.leftBar {
+  position: absolute;
+  top: 78px;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+}
+
+.rightBar {
+  position: absolute;
+  top: 78px;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  display: flex;
+}

@@ -1,0 +1,94 @@
+.topNavbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 20px;
+  display: flex;
+  padding: var(--wb-token-spacing-top-navbar-v-pad, 12px)
+    var(--wb-token-spacing-top-navbar-h-pad, 16px);
+  align-items: center;
+  border-radius: var(--wb-token-radius-shell, 12px);
+  border: 1px solid var(--wb-ui-stroke-primary-default, #edeff3);
+  background: var(--wb-ui-bg-primary-default, #fff);
+}
+
+.container {
+  background: var(--wb-app-bar-background);
+  border-radius: var(--wb-app-bar-border-radius);
+  border: 0.0625rem solid var(--wb-app-bar-border-color);
+  display: flex;
+  height: auto;
+  pointer-events: all;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .logo {
+      color: var(--wb-app-bar-logo-color);
+    }
+
+    .navSegment {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .projectSelection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: text;
+  composes: p9 from global;
+  &.readOnly {
+    cursor: not-allowed;
+  }
+}
+.input {
+  padding: var(--wb-token-spacing-input-l-v-pad, 11px)
+    var(--wb-token-spacing-input-l-h-pad, 12px);
+  align-items: center;
+  gap: var(--wb-token-spacing-input-l-gap, 8px);
+  border-radius: var(--wb-token-radius-input-l, 8px);
+  border: 1px solid var(--wb-input-stroke-primary-default, #d5d8e0);
+}
+
+.rightToolbarBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--wb-token-spacing-top-navbar-h-pad, 16px);
+}
+
+.shareButton {
+  composes: p9 from global;
+}
+
+.shareButtonLabel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

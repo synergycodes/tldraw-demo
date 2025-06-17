@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  user-select: none;
+  opacity: 0.5;
+}

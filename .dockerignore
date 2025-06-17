@@ -1,0 +1,27 @@
+# hidden directories
+
+.git
+.vscode
+.idea
+
+# external dependenvies
+
+node_modules
+
+# docker files
+
+docker-compose*.yml
+\*\*/Dockerfile* \*_/_.Dockerfile\*
+
+# deployment config
+
+tools/inventories
+ansible.cfg
+
+# not needed files
+
+README.md
+.gitignore
+.env
+dist/
+coverage/
